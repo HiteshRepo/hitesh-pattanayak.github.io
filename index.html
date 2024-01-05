@@ -50,6 +50,23 @@
          background-color: #0A66C2;
          font-family: "SF Pro Text", Helvetica, sans-serif;
       }
+
+      .part {
+         border: 1px solid #ddd;
+         margin-bottom: 10px;
+         padding: 10px;
+         background-color: #fff;
+         border-radius: 5px;
+      }
+
+      .part h3 {
+         margin-top: 0;
+         cursor: pointer;
+      }
+
+      .part-content {
+         display: none;
+      }
    </style>
 
 </head>
@@ -497,188 +514,194 @@
 
             <div class="row item">
 
-               <div class="twelve columns">
-
+               <div class="twelve columns part" onclick="togglePart(this)">
                   <h3>Infracloud Technologies</h3>
-                  <p class="info">Senior Product Engineer <span>&bull;</span> <em class="date">Aug
-                        2022 - Now</em></p>
+                  <div class="part-content">
+                     <p class="info">Senior Product Engineer <span>&bull;</span> <em class="date">Aug
+                           2022 - Now</em></p>
 
-                  <p>
-                     Essentially enabling users to fill minimal configurations (in UI or CLI) and have backend
-                     APIs to do CRUD operations on various resources and use EKSA plugin, custom controllers in order to
-                     provision K8s cluster on a baremetal. Also have debug channels to let know users about provisioning
-                     status.
-                  </p>
+                     <p>
+                        Essentially enabling users to fill minimal configurations (in UI or CLI) and have backend
+                        APIs to do CRUD operations on various resources and use EKSA plugin, custom controllers in order
+                        to
+                        provision K8s cluster on a baremetal. Also have debug channels to let know users about
+                        provisioning
+                        status.
+                     </p>
 
-                  <p class="info"><a href="https://docs.rafay.co/clusters/eksa_bm/overview/">View
-                        here</a>
-                  </p>
+                     <p class="info"><a href="https://docs.rafay.co/clusters/eksa_bm/overview/">View
+                           here</a>
+                     </p>
 
-                  <p>Provide users the capability to debug from UI itself.</p>
+                     <p>Provide users the capability to debug from UI itself.</p>
 
-                  <p>All capabilities include:
-                     <li>Provisioning cluster - single node and multi-nodes</li>
-                     <li>Delete cluster</li>
-                     <li>Rollback cluster provisioning & Restart from beginning</li>
-                     <li>Backup & Restore cluster state</li>
-                     <li>Scaling CP & DP nodes of the cluster</li>
-                     <li>Upgrade CP & DP nodes of the cluster</li>
-                     <li>Terminating ongoing cluster ops and restore to previous stable state</li>
-                  </p>
+                     <p>All capabilities include:
+                        <li>Provisioning cluster - single node and multi-nodes</li>
+                        <li>Delete cluster</li>
+                        <li>Rollback cluster provisioning & Restart from beginning</li>
+                        <li>Backup & Restore cluster state</li>
+                        <li>Scaling CP & DP nodes of the cluster</li>
+                        <li>Upgrade CP & DP nodes of the cluster</li>
+                        <li>Terminating ongoing cluster ops and restore to previous stable state</li>
+                     </p>
 
-                  <p> Immediate Roadmap:
-                     <li>Open API config support</li>
-                     <li>Private registry support</li>
-                  </p>
+                     <p> Immediate Roadmap:
+                        <li>Open API config support</li>
+                        <li>Private registry support</li>
+                     </p>
 
-                  <p>
-                     Tech Stack: Golang, Postgres, Kubernetes, Docker, EKS-A, gRPC, REST.
-                  </p>
+                     <p>
+                        Tech Stack: Golang, Postgres, Kubernetes, Docker, EKS-A, gRPC, REST.
+                     </p>
 
-                  <p>
-                     <li>Develop and maintain codebases, contribute in architecture, contribute in agile-scrum
-                        maintenance.</li>
-                     <li>Developed and maintained (adding/refactoring functionalities) microservices using Golang
-                        scripting,
-                        gRPC, REST, Postgres.</li>
-                     <li>Experiment with EKSA plugin and explore its functionalities in order to provide user the same
-                        but in
-                        a simpler way.</li>
-                     <li>Setup testbeds (in Equinix or Vagrant-Virtualbox setup) to test out the developed
-                        functionalities.</li>
-                  </p>
-
+                     <p>
+                        <li>Develop and maintain codebases, contribute in architecture, contribute in agile-scrum
+                           maintenance.</li>
+                        <li>Developed and maintained (adding/refactoring functionalities) microservices using Golang
+                           scripting,
+                           gRPC, REST, Postgres.</li>
+                        <li>Experiment with EKSA plugin and explore its functionalities in order to provide user the
+                           same
+                           but in
+                           a simpler way.</li>
+                        <li>Setup testbeds (in Equinix or Vagrant-Virtualbox setup) to test out the developed
+                           functionalities.</li>
+                     </p>
+                  </div>
                </div>
+            </div> <!-- item end -->
 
-               <div class="twelve columns">
-
+            <div class="row item">
+               <div class="twelve columns part" onclick="togglePart(this)">
                   <h3>Thoughtworks</h3>
-                  <p class="info">Senior Consultant <span>&bull;</span> <em class="date">Oct
-                        2021 - July 2022</em></p>
+                  <div class="part-content">
+                     <p class="info">Senior Consultant <span>&bull;</span> <em class="date">Oct
+                           2021 - July 2022</em></p>
 
-                  <p>
-                     Create a trading-pricing microservices based backend platform to expose APIs to get
-                     latest price/orderbooks/candles/historical stats of a crypto assets like BTC, ETH, etc.
-                  </p>
+                     <p>
+                        Create a trading-pricing microservices based backend platform to expose APIs to get
+                        latest price/orderbooks/candles/historical stats of a crypto assets like BTC, ETH, etc.
+                     </p>
 
-                  <p>
-                     Tech Stack: Golang, Postgres, TimescaleDB, Kafka, Kubernetes, Docker, Datadog, Rancher, gRPC, REST.
-                  </p>
+                     <p>
+                        Tech Stack: Golang, Postgres, TimescaleDB, Kafka, Kubernetes, Docker, Datadog, Rancher, gRPC,
+                        REST.
+                     </p>
 
-                  <p>
-                     <li>Develop and maintain codebases, contribute in architecture, contribute in agile-scrum
-                        maintenance.</li>
-                     <li>Developed and maintained (adding/refactoring functionalities) microservices using Golang
-                        scripting,
-                        gRPC, REST, Postgres, Redis and Timescale.</li>
-                     <li>Managed Event driven architecture using Kafka.</li>
-                     <li>Monitored microservices using Datadog’s APM, metrics, dashboard, logs.</li>
-                     <li>Managed Kubernetes objects configurations and deploying them on across environments.</li>
-                     <li>Managed CI/CD pipeline using Github actions (runners) and ArgoCD.</li>
-                     <li>Managed branching and semantic versioning using GitFlow.</li>
-                     <li>Managed releases (estimation, task delegation, checkpoints) with my peer group’s help.</li>
-                  </p>
-
+                     <p>
+                        <li>Develop and maintain codebases, contribute in architecture, contribute in agile-scrum
+                           maintenance.</li>
+                        <li>Developed and maintained (adding/refactoring functionalities) microservices using Golang
+                           scripting,
+                           gRPC, REST, Postgres, Redis and Timescale.</li>
+                        <li>Managed Event driven architecture using Kafka.</li>
+                        <li>Monitored microservices using Datadog’s APM, metrics, dashboard, logs.</li>
+                        <li>Managed Kubernetes objects configurations and deploying them on across environments.</li>
+                        <li>Managed CI/CD pipeline using Github actions (runners) and ArgoCD.</li>
+                        <li>Managed branching and semantic versioning using GitFlow.</li>
+                        <li>Managed releases (estimation, task delegation, checkpoints) with my peer group’s help.</li>
+                     </p>
+                  </div>
                </div>
 
             </div> <!-- item end -->
 
             <div class="row item">
-
-               <div class="twelve columns">
-
+               <div class="twelve columns part" onclick="togglePart(this)">
                   <h3>Sureify Technologies</h3>
-                  <p class="info">Senior Software Developer <span>&bull;</span> <em class="date">Dec 2020 - August
-                        2021</em></p>
+                  <div class="part-content">
+                     <p class="info">Senior Software Developer <span>&bull;</span> <em class="date">Dec 2020 - August
+                           2021</em></p>
 
-                  <p>
-                     Development of a Web-based product to enable users to create apps using drag & drop
-                     components. Also provide ability to integrate APIs, DB queries, etc to fetch data. Idea was to
-                     develop
-                     applications on the lines of AppGyver(by SAP), UIBakery, Buildr, Retool, etc but multi-tenant based
-                     with
-                     simpler UI.
-                  </p>
+                     <p>
+                        Development of a Web-based product to enable users to create apps using drag & drop
+                        components. Also provide ability to integrate APIs, DB queries, etc to fetch data. Idea was to
+                        develop
+                        applications on the lines of AppGyver(by SAP), UIBakery, Buildr, Retool, etc but multi-tenant
+                        based
+                        with
+                        simpler UI.
+                     </p>
 
-                  <p>
-                     Tech Stack: Golang, Postgres, TimescaleDB, Kafka, Kubernetes, Docker, Datadog, Rancher, gRPC, REST.
-                  </p>
+                     <p>
+                        Tech Stack: Golang, Postgres, TimescaleDB, Kafka, Kubernetes, Docker, Datadog, Rancher, gRPC,
+                        REST.
+                     </p>
 
-                  <p>
-                     <li>Develop and maintain codebases, contribute in architecture, contribute in agile-scrum
-                        maintenance.</li>
-                     <li>Developed and maintained (adding/refactoring functionalities) microservices using Golang
-                        scripting,
-                        gRPC, GraphQL, MYSQL and Redis.</li>
-                     <li>Managed decoupled SAGA architecture using RabbitMQ.</li>
-                     <li>Monitored microservices using ELK stack.</li>
-                     <li>Managed Kubernetes objects configurations and deploying them on across environments.</li>
-                     <li>Managed CI/CD pipeline using Github actions (runners) and CircleCI.</li>
-                     <li>Worked on frontend functionalities using REACT framework.</li>
-                  </p>
-
+                     <p>
+                        <li>Develop and maintain codebases, contribute in architecture, contribute in agile-scrum
+                           maintenance.</li>
+                        <li>Developed and maintained (adding/refactoring functionalities) microservices using Golang
+                           scripting,
+                           gRPC, GraphQL, MYSQL and Redis.</li>
+                        <li>Managed decoupled SAGA architecture using RabbitMQ.</li>
+                        <li>Monitored microservices using ELK stack.</li>
+                        <li>Managed Kubernetes objects configurations and deploying them on across environments.</li>
+                        <li>Managed CI/CD pipeline using Github actions (runners) and CircleCI.</li>
+                        <li>Worked on frontend functionalities using REACT framework.</li>
+                     </p>
+                  </div>
                </div>
-
             </div> <!-- item end -->
 
             <div class="row item">
-
-               <div class="twelve columns">
-
+               <div class="twelve columns part" onclick="togglePart(this)">
                   <h3>Cognizant</h3>
-                  <p class="info">Project Associate <span>&bull;</span> <em class="date">Feb 2019 - Dec
-                        2020</em></p>
+                  <div class="part-content">
+                     <p class="info">Project Associate <span>&bull;</span> <em class="date">Feb 2019 - Dec
+                           2020</em></p>
 
-                  <p>
-                     Automated various redundant processes for a banking client using Python, Selenium, C#,
-                     MySQL. Managed decoupled architecture using RabbitMQ. Monitored processes using ELK stack. Worked
-                     on
-                     frontend functionalities using REACT framework for Admin console.
-                  </p>
+                     <p>
+                        Automated various redundant processes for a banking client using Python, Selenium, C#,
+                        MySQL. Managed decoupled architecture using RabbitMQ. Monitored processes using ELK stack.
+                        Worked
+                        on
+                        frontend functionalities using REACT framework for Admin console.
+                     </p>
 
-                  <p>
-                     Tech Stack: Python, Selenium, C#, Postgres, RabbitMQ, Docker, REST, ReactJS.
-                  </p>
+                     <p>
+                        Tech Stack: Python, Selenium, C#, Postgres, RabbitMQ, Docker, REST, ReactJS.
+                     </p>
 
-                  <p>
-                     <li>Develop and maintain codebases, contribute in architecture, contribute in agile-scrum
-                        maintenance.</li>
-                     <li>Automated various redundant processes for a banking client using Python, Selenium, C#, MySQL.
-                     </li>
-                     <li>Managed decoupled architecture using RabbitMQ.</li>
-                     <li>Monitored microservices using ELK stack.</li>
-                     <li>Worked on frontend functionalities using REACT framework for Admin console.</li>
-                  </p>
-
+                     <p>
+                        <li>Develop and maintain codebases, contribute in architecture, contribute in agile-scrum
+                           maintenance.</li>
+                        <li>Automated various redundant processes for a banking client using Python, Selenium, C#,
+                           MySQL.
+                        </li>
+                        <li>Managed decoupled architecture using RabbitMQ.</li>
+                        <li>Monitored microservices using ELK stack.</li>
+                        <li>Worked on frontend functionalities using REACT framework for Admin console.</li>
+                     </p>
+                  </div>
                </div>
-
             </div> <!-- item end -->
 
             <div class="row item">
-
-               <div class="twelve columns">
-
+               <div class="twelve columns part" onclick="togglePart(this)">
                   <h3>Infosys</h3>
-                  <p class="info">Senior Software Developer <span>&bull;</span> <em class="date">Oct 2015 - Jan
-                        2019</em></p>
+                  <div class="part-content">
+                     <p class="info">Senior Software Developer <span>&bull;</span> <em class="date">Oct 2015 - Jan
+                           2019</em></p>
 
-                  <p>
-                     Developed web pages as a part of monolith application using ASP.NET MVC, C#, SQL
-                     Server. Deployed the webapps in IIS. Maintained the webpages by fixing bugs and issues.
-                  </p>
+                     <p>
+                        Developed web pages as a part of monolith application using ASP.NET MVC, C#, SQL
+                        Server. Deployed the webapps in IIS. Maintained the webpages by fixing bugs and issues.
+                     </p>
 
-                  <p>
-                     Tech Stack: C#, SQL Server, IIS, ASP.NET MVC, REST, ADO.NET Entity Framework.
-                  </p>
+                     <p>
+                        Tech Stack: C#, SQL Server, IIS, ASP.NET MVC, REST, ADO.NET Entity Framework.
+                     </p>
 
-                  <p>
-                     <li>Develop and maintain codebases, contribute in architecture, contribute in agile-scrum
-                        maintenance.</li>
-                     <li>Developed web pages as a part of monolith application using ASP.NET MVC, C#, SQL Server.</li>
-                     <li>Deployed the webapps in IIS.</li>
-                     <li>Maintained the webpages by fixing bugs and issues.</li>
-                  </p>
-
+                     <p>
+                        <li>Develop and maintain codebases, contribute in architecture, contribute in agile-scrum
+                           maintenance.</li>
+                        <li>Developed web pages as a part of monolith application using ASP.NET MVC, C#, SQL Server.
+                        </li>
+                        <li>Deployed the webapps in IIS.</li>
+                        <li>Maintained the webpages by fixing bugs and issues.</li>
+                     </p>
+                  </div>
                </div>
 
             </div> <!-- item end -->
@@ -701,8 +724,8 @@
 
                <div class="twelve columns">
 
-                  <h3>Add test case for PEM Certificate in config issue</h3>
-                  <p class="info"><a href="https://github.com/aws/eks-anywhere/pull/6117">View here</a>
+                  <h3>AWS EKS Anywhere</h3>
+                  <p class="info"><a href="https://github.com/aws/eks-anywhere/commits?author=HiteshRepo">View here</a>
                   </p>
                </div>
 
@@ -712,30 +735,8 @@
 
                <div class="twelve columns">
 
-                  <h3>Issue raised for failure of scaling operation when cert bundles are provided</h3>
-                  <p class="info"><a href="https://github.com/aws/eks-anywhere/issues/6108">View here</a>
-                  </p>
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Replace multi yaml file parsing via yaml separator</h3>
-                  <p class="info"><a href="https://github.com/aws/eks-anywhere/pull/6170">View here</a>
-                  </p>
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Check existence of machine config before further operations</h3>
-                  <p class="info"><a href="https://github.com/aws/eks-anywhere/pull/6171">View here</a>
+                  <h3>Corso</h3>
+                  <p class="info"><a href="https://github.com/alcionai/corso/commits?author=HiteshRepo">View here</a>
                   </p>
                </div>
 
@@ -799,6 +800,12 @@
    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
    <script type="module" src="config.js"></script>
    <script type="module" src="visitor.js"></script>
+   <script>
+      function togglePart(part) {
+         var content = part.querySelector('.part-content');
+         content.style.display = (content.style.display === 'block' || content.style.display === '') ? 'none' : 'block';
+      }
+   </script>
    <!-- <script>
       fetch('')
          .then(response => response.json())
