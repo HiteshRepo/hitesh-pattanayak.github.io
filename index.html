@@ -35,39 +35,47 @@
    <link rel="shortcut icon" href="favicon.png">
 
    <style>
-      .libutton {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         padding: 7px;
-         text-align: center;
-         outline: none;
-         text-decoration: none !important;
-         color: #ffffff !important;
-         width: 200px;
-         height: 32px;
-         border-radius: 16px;
-         background-color: #0A66C2;
-         font-family: "SF Pro Text", Helvetica, sans-serif;
-      }
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        gap: 8px; /* Adjust the gap as needed */
+    }
 
+    .minimal-button {
+        display: inline-block;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        color: #0A66C2; /* Change to your preferred color */
+        border: 1px solid #0A66C2; /* Add border for a button-like appearance */
+        border-radius: 5px;
+        font-family: "SF Pro Text", Helvetica, sans-serif;
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    }
+
+    .minimal-button:hover {
+        background-color: #0A66C2; /* Change background on hover */
+        color: #ffffff; /* Change text color on hover */
+    }
+  
       .part {
-         border: 1px solid #ddd;
-         margin-bottom: 10px;
-         padding: 10px;
-         background-color: #fff;
-         border-radius: 5px;
+          border: 1px solid #ddd;
+          margin-bottom: 10px;
+          padding: 10px;
+          background-color: #fff;
+          border-radius: 5px;
       }
-
+  
       .part h3 {
-         margin-top: 0;
-         cursor: pointer;
+          margin-top: 0;
+          cursor: pointer;
       }
-
+  
       .part-content {
-         display: none;
+          display: none;
       }
-   </style>
+  </style>
+  
 
 </head>
 
@@ -144,18 +152,20 @@
 
             <p> Hobbies: Workout | Chess | Bike riding </p>
 
+           <div class="button-container">
             <div class="columns download">
-               <p>
-                  <a href="images/Resume-Hitesh-Pattanayak.pdf" class="button"><i class="fa fa-download"></i>Download
-                     Resume</a>
-               </p>
+                <a href="images/Resume-Hitesh-Pattanayak.pdf" class="minimal-button"><i class="fa fa-download"></i> Download Resume</a>
             </div>
-
+        
             <div class="columns download">
-               <a class="libutton"
-                  href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=hitesh-pattanayak-52290b160"
-                  target="_blank">Follow on LinkedIn</a>
+                <a class="minimal-button" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=hitesh-pattanayak-52290b160" target="_blank">Follow on LinkedIn</a>
             </div>
+        
+            <div class="columns download">
+                <a class="minimal-button" href="https://www.amazon.in/Modern-API-Design-gRPC-Distributed/dp/8197081832" target="_blank">Book on gRPC</a>
+            </div>
+        </div>
+           
 
          </div> <!-- end .main-col -->
 
